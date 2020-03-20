@@ -10,7 +10,7 @@ namespace SistemaDeIrrigacion
         static void Main(string[] args)
         {
             List<Sistema> sistemas = new List<Sistema>();
-            using (StreamReader t = new StreamReader("test.txt"))
+            using (StreamReader t = new StreamReader(args[0]))
             {
                 string[] inputs = t.ReadLine().Split(" ");
                 while (!(Convert.ToInt32(inputs[0]) == 9999 && Convert.ToInt32(inputs[1]) == 9999 && Convert.ToInt32(inputs[2]) == 9999))
